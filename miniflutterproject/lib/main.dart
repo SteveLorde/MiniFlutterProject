@@ -53,7 +53,32 @@ class MainPage extends StatelessWidget {
                         Expanded(
                             child: Container(
                               color: Colors.black,
-                          child: Row(),
+                          child: Row(
+                            children: [
+
+
+
+
+                              //Icon Buttons
+                              Container(
+                                margin: 50,
+                                color: Colors.white,
+                                height: 100,
+                                width: 100,
+                                child: Center(
+                                  child: Column(
+                                    children: [
+                                      Image.asset(name)
+                                    ],
+
+
+
+
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         )),
 
                         Expanded(
