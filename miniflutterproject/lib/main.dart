@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: MainPage(),
     );
   }
@@ -41,7 +41,7 @@ class MainPage extends StatelessWidget {
                 child: Column(
                   children: [
                     Expanded(
-                      //Multiple Rows
+                        //Multiple Rows
                         child: Column(
                       children: [
                         Expanded(
@@ -52,28 +52,19 @@ class MainPage extends StatelessWidget {
                         //Put Elements here
                         Expanded(
                             child: Container(
-                              color: Colors.black,
+                          color: Colors.black,
                           child: Row(
                             children: [
-
-
-
-
                               //Icon Buttons
                               Container(
-                                margin: 50,
                                 color: Colors.white,
                                 height: 100,
                                 width: 100,
                                 child: Center(
                                   child: Column(
-                                    children: [
-                                      Image.asset(name)
+                                    children: const [
+                                      
                                     ],
-
-
-
-
                                   ),
                                 ),
                               )
@@ -83,7 +74,7 @@ class MainPage extends StatelessWidget {
 
                         Expanded(
                             child: Container(
-                              color: Colors.purple,
+                          color: Colors.purple,
                           child: Row(),
                         )),
                       ],
@@ -103,4 +94,3 @@ class MainPage extends StatelessWidget {
     );
   }
 }
-
